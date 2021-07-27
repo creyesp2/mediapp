@@ -16,7 +16,7 @@ import org.springframework.data.jpa.repository.Query;
  *
  * @author carlo
  */
-public interface IPersonaRepository extends JpaRepository<Persona, Long>{
+public interface IPersonaRepository extends JpaRepository<Persona, Integer>{
     @Query(value = "select a.id_persona idPersona,a.nombre, a.telefono, a.apelidos from Persona a ",nativeQuery = true)
     List<PacienteDto>getAllDara();
     

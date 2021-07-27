@@ -30,7 +30,7 @@ public class Persona implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_persona")
-    private long idPersona;
+    private Integer idPersona;
     @Column(name = "nombre")
     private String nombre;
     @Column(name = "apelidos")

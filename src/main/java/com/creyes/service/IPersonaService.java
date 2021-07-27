@@ -17,8 +17,8 @@ import java.util.List;
 public interface IPersonaService {
     public List<Persona> findAll();
     public Persona save(Persona persona);
-    public Persona findById(Long id);
-    public void delete(Long id);
+    public Persona findById(Integer id);
+    public void delete(Integer id);
     public List<PacienteDto>getAllData();
     public List<PersonaDto>getAllPersona();
 }

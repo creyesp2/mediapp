@@ -33,12 +33,12 @@ private IPersonaRepository personaRepository;
     }
 
     @Override
-    public Persona findById(Long id) {
-       return this.personaRepository.getById(id);
+    public Persona findById(Integer id) {
+       return this.personaRepository.findById(id).orElse(null);
     }
 
     @Override
-    public void delete(Long id) {
+    public void delete(Integer id) {
         this.personaRepository.deleteById(id);
     }
 
